@@ -13,7 +13,7 @@ Trong cuộc sống bận rộn, việc lên thực đơn hàng ngày từ nhữ
 #### Tổng quan về workshop
 Trong workshop này, toàn bộ hệ thống được thiết kế theo kiến trúc đám mây an toàn, phân tách rõ ràng các lớp dịch vụ và tối ưu hóa cho môi trường Serverless/Containerized. Luồng dữ liệu bắt đầu khi người dùng truy cập giao diện web (React SPA) được lưu trữ và triển khai tự động (CI/CD) thông qua **AWS Amplify**. Quá trình đăng nhập và xác thực danh tính được quản lý bảo mật nghiêm ngặt bởi **Amazon Cognito**. Sau khi xác thực, thay vì phơi bày backend ra internet công cộng, các yêu cầu từ Frontend được định tuyến qua cầu nối **VPC Link** để tiến vào mạng nội bộ riêng tư (VPC). Tại vùng mạng an toàn này, **EC2 Recipe API** sẽ tiếp nhận yêu cầu, xử lý logic hệ thống và tra cứu dữ liệu có cấu trúc (thông tin người dùng, công thức, lịch sử) từ cơ sở dữ liệu quan hệ **Amazon RDS (MySQL)**. Đặc biệt, đối với các tác vụ đòi hỏi Trí tuệ nhân tạo, yêu cầu sẽ được chuyển giao cho **EC2 AI Server** (hoạt động độc lập bằng các container **Docker**). Server này được thiết kế linh hoạt để giao tiếp bảo mật qua HTTPS với **Google Gemini API**, tận dụng tối đa sức mạnh xử lý ngôn ngữ tự nhiên và tính năng function calling của LLM để vận hành công cụ Semantic Search và AI Chatbot, đảm bảo phản hồi chính xác, nhanh chóng và dễ dàng kiểm soát chi phí trong quá trình triển khai.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/workflow.jpg)
+![overview](/images/5-Workshop/5.1-Workshop-overview/Workflow.jpg)
 
 **Bảo mật cơ bản và quản lý truy cập**
 

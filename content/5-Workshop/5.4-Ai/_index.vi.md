@@ -18,7 +18,7 @@ Trong bước triển khai này, chúng ta sẽ thực hiện ba tác vụ chín
 
 - Tích hợp Động cơ AI - Xây dựng các đoạn mã logic từ FastAPI để kết nối API ra các dịch vụ LLM bên ngoài (như Amazon Bedrock hoặc Google Gemini API). Đây là lõi xử lý chính giúp hệ thống thực thi lệnh tìm kiếm theo ngữ nghĩa (Semantic Search) và vận hành Chatbot tư vấn nấu ăn thông minh.
     
-![overview](/images/5-Workshop/5.1-Workshop-overview/workflow.jpg)
+![overview](/images/5-Workshop/5.1-Workshop-overview/Workflow.jpg)
 
 
 #### Nội dung

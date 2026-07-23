@@ -18,7 +18,7 @@ In this deployment step, we will carry out three main tasks to bring the AI engi
 
 - Integrate the AI Engine - Build the logic code in FastAPI to connect the API out to external LLM services (such as Amazon Bedrock or the Google Gemini API). This is the core processing layer that lets the system perform Semantic Search and run the intelligent cooking-advisor Chatbot.
     
-![overview](/images/5-Workshop/5.1-Workshop-overview/workflow.jpg)
+![overview](/images/5-Workshop/5.1-Workshop-overview/Workflow.jpg)
 
 
 #### Contents

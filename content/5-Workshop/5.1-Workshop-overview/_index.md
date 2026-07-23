@@ -13,7 +13,7 @@ In busy modern life, planning daily meals from leftover ingredients often takes 
 #### Workshop Overview
 In this workshop, the entire system is designed following a secure cloud architecture, with clearly separated service layers and optimization for Serverless/Containerized environments. The data flow begins when a user accesses the web interface (a React SPA), which is hosted and deployed automatically (CI/CD) through **AWS Amplify**. Login and identity verification are strictly and securely managed by **Amazon Cognito**. After authentication, instead of exposing the backend to the public internet, requests from the Frontend are routed through a **VPC Link** bridge into the private internal network (VPC). Within this secure network, the **EC2 Recipe API** receives requests, processes the system logic, and looks up structured data (user information, recipes, history) from the relational database **Amazon RDS (MySQL)**. In particular, for tasks that require Artificial Intelligence, requests are handed off to the **EC2 AI Server** (running independently via **Docker** containers). This server is flexibly designed to communicate securely over HTTPS with the **Google Gemini API**, taking full advantage of the LLM's natural-language-processing power and function-calling capability to operate the Semantic Search tool and the AI Chatbot, ensuring accurate, fast responses and easy cost control during deployment.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/workflow.jpg)
+![overview](/images/5-Workshop/5.1-Workshop-overview/Workflow.jpg)
 
 **Basic Security and Access Management**
 
